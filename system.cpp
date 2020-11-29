@@ -15,7 +15,7 @@ void library(std::string employee) {
     // book when it needs to get checked out (<"name">) and the due date (<"due date">)
     // separated by a comma (,)
 
-    discordjs.book_checkout("Lyam Mosnier", "29/12/20");
+    discordjs.book_checkout();
     Bloodlabs.book_checkout();
     pythonforbeginners.book_checkout();
 
@@ -39,7 +39,6 @@ void library(std::string employee) {
     Lordoftherings.movie_checkout();
 
     // vvvvvvv | Get movie details - format is "<moviecodename>.get_movie();"
-    HarryPotterPhilosophersStone.get_movie();
 
     // ^^^^^^^ | e.g. movieBook.get_movie();
 
