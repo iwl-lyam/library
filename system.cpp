@@ -36,7 +36,7 @@ void library(std::string employee) {
     // When they need to be checked out (<"name">)
 
     HarryPotterPhilosophersStone.movie_checkout("Lyam Mosnier", "29/12/20");
-    Lordoftherings.movie_checkout("Kate Knowler", "29/12/20");
+    Lordoftherings.movie_checkout();
 
     // vvvvvvv | Get movie details - format is "<moviecodename>.get_movie();"
     Lordoftherings.get_movie();
