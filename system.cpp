@@ -21,8 +21,7 @@ void library(std::string employee)
     pythonforbeginners.book_checkout();
 
     // Search book details - Use <bookcodename>.get_book();
-
-    discordjs.get_book();
+    
     // e.g. bookname.get_book();
 
     // --------------------
