@@ -22,6 +22,7 @@ void library(std::string employee)
 
     // Search book details - Use <bookcodename>.get_book();
     Bloodlabs.get_book();
+    discordjs.get_book();
     // e.g. bookname.get_book();
 
     // --------------------
