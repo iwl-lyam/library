@@ -53,17 +53,19 @@ void library(std::string employee) {
     std::cin >> stop;
 }
 
+// You may touch this part though.
+
 int main() {
-    std::cout << "Please enter your Employee pin number to gain access to the library dashboard.";
+    std::cout << "Please enter your Employee pin number to gain access to the library dashboard. ";
     int pin;
     std::cin >> pin;
     if (pin == 1234) {
         std::cout << "Pin correct.";
-        std::string employee = "Lyam";
+        std::string employee = "Joe";
         library(employee);
     } else if (pin == 6789) {
         std::cout << "Pin correct.";
-        std::string employee = "Kate";
+        std::string employee = "Bob";
         library(employee);
     } else {
         std::cout << "Pin incorrect.";
