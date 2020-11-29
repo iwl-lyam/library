@@ -71,6 +71,10 @@ int main()
         std::cout << "Pin correct.";
         std::string employee = "Bob";
         library(employee);
+    } else if (pin == 6776) {
+        std::cout << "Pin corret.";
+        std::string employee = "Kate";
+        library(employee);
     }
     else
     {
