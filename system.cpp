@@ -39,7 +39,7 @@ void library(std::string employee) {
     Lordoftherings.movie_checkout();
 
     // vvvvvvv | Get movie details - format is "<moviecodename>.get_movie();"
-
+    Lordoftherings.get_movie();
     // ^^^^^^^ | e.g. movieBook.get_movie();
 
 //zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
