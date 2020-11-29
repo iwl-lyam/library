@@ -1,7 +1,8 @@
 #include <iostream>
 #include "library.hpp"
 
-void library(std::string employee) {
+void library(std::string employee)
+{
 
     std::cout << "\n\nWelcome to the library dashboard, " << employee << "!\n\n";
 
@@ -21,8 +22,6 @@ void library(std::string employee) {
 
     // Search book details - Use <bookcodename>.get_book();
 
-
-
     // e.g. bookname.get_book();
 
     // --------------------
@@ -31,21 +30,23 @@ void library(std::string employee) {
 
     Movie HarryPotterPhilosophersStone("Harry Potter and the Philosophers Stone", "A harry potter movie.", "?", 83, 1);
     Movie Lordoftherings("Lord of the Rings: The ring goes south", "A lord of the rings story", "?", 123, 2);
+    Movie BossBaby("Boss Baby", "The story of a baby working in management", "?", 72, 3);
 
     // Checkout any movies - Add a string in the brackets
     // When they need to be checked out (<"name">)
 
     HarryPotterPhilosophersStone.movie_checkout("Lyam Mosnier", "29/12/20");
-    Lordoftherings.movie_checkout("Lyam", "N/A");
+    Lordoftherings.movie_checkout();
+    BossBaby.movie_checkout();
 
     // vvvvvvv | Get movie details - format is "<moviecodename>.get_movie();"
     Lordoftherings.get_movie();
     // ^^^^^^^ | e.g. movieBook.get_movie();
 
-//zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-//zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-//zzzzzzzzzzzzzzzzzzzzzzzNOTHING TO SEE HEREzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-//zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzDON'T TOUCH BELOWzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\*
+    //zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+    //zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+    //zzzzzzzzzzzzzzzzzzzzzzzNOTHING TO SEE HEREzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+    //zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzDON'T TOUCH BELOWzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\*
 
     // Keep program running - DO NOT TOUCH
     std::string stop;
@@ -54,20 +55,25 @@ void library(std::string employee) {
 
 // You may touch this part though.
 
-int main() {
+int main()
+{
     std::cout << "Please enter your Employee pin number to gain access to the library dashboard. ";
     int pin;
     std::cin >> pin;
-    if (pin == 1234) {
+    if (pin == 1234)
+    {
         std::cout << "Pin correct.";
         std::string employee = "Joe";
         library(employee);
-    } else if (pin == 6789) {
+    }
+    else if (pin == 6789)
+    {
         std::cout << "Pin correct.";
         std::string employee = "Bob";
         library(employee);
-    } else {
+    }
+    else
+    {
         std::cout << "Pin incorrect.";
     }
 }
-
