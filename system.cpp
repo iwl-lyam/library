@@ -9,7 +9,7 @@ void library(std::string employee)
     // Register books - DO NOT TOUCH
 
     Book discordjs("A guide to Discord.js", "A book all about the Discord.js Library.", "Lyam Mosnier", 42, 1);
-    Book Bloodlabs("Blood Labs", "A book about blood", "Kate Knower", 165, 2);
+    Book Bloodlabs("Blood Labs", "A book about blood", "Kate Knowler", 165, 2);
     Book pythonforbeginners("Python for Beginners", "A book on Python for beginners", "?", 144, 3);
 
     // Checkout any books - Add a 2 strings in the brackets for the certain
@@ -21,7 +21,7 @@ void library(std::string employee)
     pythonforbeginners.book_checkout();
 
     // Search book details - Use <bookcodename>.get_book();
-
+    Bloodlabs.get_book();
     // e.g. bookname.get_book();
 
     // --------------------
