@@ -21,7 +21,7 @@ void library(std::string employee)
     pythonforbeginners.book_checkout();
 
     // Search book details - Use <bookcodename>.get_book();
-    
+
     // e.g. bookname.get_book();
 
     // --------------------
@@ -71,8 +71,10 @@ int main()
         std::cout << "Pin correct.";
         std::string employee = "Bob";
         library(employee);
-    } else if (pin == 6776) {
-        std::cout << "Pin corret.";
+    }
+    else if (pin == 6776)
+    {
+        std::cout << "Pin correct.";
         std::string employee = "Kate";
         library(employee);
     }
