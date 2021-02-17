@@ -80,6 +80,6 @@ int main()
     }
     else
     {
-        std::cout << "Pin incorrect.";
+        std::cout << "Pin incorrect.\n";
     }
 }
